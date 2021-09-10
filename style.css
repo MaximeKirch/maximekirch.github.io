@@ -1,0 +1,500 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@100;300;400;700&family=Roboto:ital,wght@0,300;0,400;0,700;1,100&display=swap');
+
+/*  INDEX CSS : */ 
+
+/* 1. Général */ 
+/*     a. Nav Bar       */
+/*     b. Footer        */ 
+
+/* 2. Accueil */ 
+/*     a. Hero Banner  */
+/*     b. Main         */
+/*     c. Central      */
+/*     d. Side Bar     */
+
+/* 3. Contact */ 
+/*     a. Central Subtitle  */
+/*     b. Contact Form      */
+/*     c. Bouton Envoyer    */ 
+
+
+/* 4. Nous trouver */ 
+/*     a. Général           */
+/*     b. Map               */
+
+/* 5. Booking */
+/*     a. Général           */
+/*    
+
+
+/* ------------------------------------------------------------------------- */
+
+   /* 1. Général */ 
+/* --------------------------------------------------- */    
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+    /*a. Nav Bar */
+
+header {
+    display: flex;
+    width: auto;
+    flex-wrap: wrap;
+}
+
+.mainTitle {
+    display: flex;
+    width: auto;
+    justify-content: center;
+    flex-wrap: wrap;
+    font-family: 'Josefin Slab', Arial, sans-serif;
+    font-size: 48px;
+    margin-bottom: 10px;
+    
+}
+
+.mainTitle > h1 {
+    display: flex;
+    font-weight: 300;
+    margin-top: 20px;
+}
+
+.subTitle {
+    margin-bottom: 10px;
+    display: flex;
+    width: auto;
+    justify-content: center;
+    font-family: 'Josefin Slab', Arial, sans-serif;
+}
+
+.subTitle > h3 {
+    font-weight: 300;
+    font-size: 28px;
+}
+
+.line {
+    display: flex;
+    width: auto;
+    justify-content: center;
+}
+
+.line > hr {
+   
+    color: black;
+    width: 30%;
+    border: 0.2px solid black;
+ 
+}
+
+.menu {
+    margin-top: 20px;
+    display: block;
+    width: auto;
+    justify-content: space-between;
+}
+
+.menu ul li {
+    float: none;
+    width: auto;
+    text-align:center;
+    position: relative;
+}
+
+
+.menu ul {
+    display: flex;
+    width: auto;
+    justify-content: space-around;
+
+    
+}
+
+.menu li {
+    display: inline;
+    margin: 10px 20px;
+    font-family: 'Josefin Slab', arial, sans-serif;
+    font-size: 24px;
+}
+
+/* Menu déroulant */ 
+
+.sous {
+    display: none !important;
+    box-shadow: 0px 1px 2px #CCC;
+    background-color: white;
+    position: absolute;
+    width: auto;
+    z-index: 2000;
+   
+}
+
+.sous li  {
+    float: none;
+    font-size: 20px;
+    display:inline-flex;
+    align-items: flex-start;
+    justify-content: center;
+    width: auto;
+    height: auto;
+    margin:0;
+    padding: 0;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    padding-left:2px;
+    padding-right:2px;
+}
+
+.sous a {
+    border-bottom: none;
+    margin: 0;
+    padding: 0;
+}
+
+.sous a:hover {
+    border-bottom: none;
+}
+
+.deroulant > a::after{
+    content:" ▼";
+    font-size: 10px;
+
+}
+
+.menu > ul .deroulant:hover .sous {
+    display: block !important;
+
+}
+
+/* -------------------------------------------------------------*/
+/* b. Footer */
+
+.footer {
+    display: flex;
+    width: auto;
+    height: 50px;
+    background-color: rgba(51,51,51,1);
+    align-content: center;
+}
+
+.footer  ul {
+    margin-top: 10px;
+    display: flex;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+}
+
+.footer  li {
+  
+    display: inline;
+    margin: 0px 20px;
+    font-size: 24px;
+    font-family: 'Josefin Slab', Arial, Sans-serif;
+    font-weight: 400;
+    color: rgb(196, 196, 196);
+    align-self: center;
+}
+
+.footer a {
+    color: rgb(196, 196, 196);
+ 
+}
+
+    /* 2. Accueil */
+/* -------------------------------------------------- */
+ 
+/* a. Hero */ 
+
+
+#supHero {
+    margin-top: 10px;
+    width: auto;
+}
+.hero {
+    z-index: 99;
+    height: 500px;
+    width: auto;
+    background-image: url('https://atiusella.com/wp-content/uploads/2020/01/cropped-Coucher-soleil-aintone-scaled-1.jpg');
+}
+
+/* ------------------------------------------------------- */
+/* b. Main */ 
+
+.main {
+    z-index: 0;
+    display: flex;
+    width: auto;
+    height: auto;
+    background-color: rgb(71, 77, 64);
+    justify-content: center;
+}
+
+/* ----------------------------------------------------- */ 
+/* c. Central */
+
+.central {
+    display:block;
+    justify-content: center;
+    z-index: 99;
+    width: 60%;
+    background-color: rgb(255, 255, 255);
+    margin-top: -150px;
+    /* margin-left: 50px;*/
+    padding-bottom: 30px;
+    margin-bottom: 20px;
+}
+
+.centralTitle {
+    display: flex;
+    width: auto;
+    justify-content: center;
+    margin-bottom: 50px;
+    margin-top: 20px;
+    
+}
+
+.centralTitle > h2 {
+    font-family: 'Josefin Slab', Arial, sans-serif;
+    font-size: 64px;
+    font-weight: 300;
+    margin-top: 20px;
+}
+
+.centralSubTitle {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 50px;
+    
+
+}
+
+.centralSubTitle > h3 {
+    display: flex;
+    font-size: 60px;
+    font-family: 'Josefin Slab', Arial, sans-serif;
+    font-weight: 400;
+    width: 90%;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.welcome {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    
+}
+
+.welcome > h4 {
+    display: flex;
+    font-size: 28px;
+    font-family: 'Josefin Slab', arial, sans-serif;
+    font-weight: 700;
+}
+
+.text {
+    display: flex;
+    margin: 20px;
+    margin-top: 50px;
+}
+
+.text > p {
+    font-family: 'Josefin Slab', arial, sans-serif;
+    font-size: 18px;
+    line-height: 1.8;
+    text-align: center;
+}
+
+.text > p > a {
+    font-style: italic;
+    
+    font-size: 18px;
+}
+
+.video {
+    margin-top: 50px;
+    display: flex;
+    width: auto;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+/* d. Side bar */
+
+.sidebar {
+    z-index: 2;
+    width: auto;
+    max-height: 1500px;
+   
+
+}
+
+.pixlee_lightbox_frame {
+    justify-content: center;
+    display: flex;
+}
+
+#pixlee_container{
+    margin-top:-50px;
+    display: column;
+    justify-content: center;
+    width: auto;
+    height: auto;
+    flex-wrap: wrap;
+    background-color:rgb(255,255,255);
+    margin-left: 20px;
+    padding: 50px 50px;
+}
+
+#pixlee_container h2 {
+    display: flex;
+    font-family: 'Josefin Slab', arial, sans-serif;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+
+
+
+/* -------------------------------------------------------- */
+
+/* 3. Contact */ 
+
+    /* a. General */ 
+
+.contactCentralSubtitle {
+    display: flex;
+    justify-content: center;
+    width: auto;
+   
+}
+
+.contactCentralSubtitle h3 {
+
+    font-size: 64px;
+    font-family: 'Josefin Slab', arial, sans-serif;
+    margin-top: 30px;
+    font-weight: 400;
+
+}
+
+#subtitleHr {
+    display: flex;
+    width: auto;
+    justify-content: center;
+    margin: 20px 100px;
+}
+
+    /* b. Formulaire */ 
+
+.formContact {
+    display: flex;
+    width: auto;
+    height: auto;
+    justify-content: center;
+    text-align: center;
+    margin: 30px;
+    padding-bottom: 30px;
+    background-color:rgb(196, 196, 196,0.1);
+    border-radius: 5px;
+}
+
+.formContact > form p {
+    font-family: 'Josefin Slab', arial, sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+    margin: 10px 0px;
+}
+
+.formContact > form input {
+    height: 30px;
+    width: 350px;
+}
+
+    /* c. Bouton Envoyer */ 
+
+#submitBtn {
+    margin-top: 20px;
+    width: 60px;
+    height: auto;
+    border-radius: 3px;
+    border: 2px solid rgba(51,51,51,1);
+    background-color: rgba(255,255,255);
+    color: rgba(51,51,51,1);
+    width: 380px;
+    font-size: 24px;
+    font-family: 'Josefin Slab', arial, sans-serif;
+    font-weight: 400;
+    margin: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+#submitBtn:hover {
+    background-color: rgba(51,51,51,1);
+    color: rgba(255,255,255);
+    cursor: pointer;
+}
+
+/* ------------------------------------------------------------------*/
+
+/* 4. Nous trouver */ 
+
+    /* a. Général */ 
+
+.foundCentralSubtitle {
+    display: flex;
+    justify-content: center;
+    width: auto;
+}
+
+.foundCentralSubtitle h3 {
+    font-size: 64px;
+    font-family: 'Josefin Slab', arial, sans-serif;
+    margin-top: 30px;
+    font-weight: 400;
+}
+
+#foundText {
+    display: flex;
+    justify-content: center;
+    font-family: 'Josefin Slab', arial, sans-serif;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+    /* b. Map */ 
+
+.map {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+/* ------------------------------------------------------------------- */
+
+/* 5. Booking */
+
+    /* a. Général */ 
+
+.bookingCentralSubtitle {
+    display: flex;
+    justify-content: center;
+    width: auto;
+}
+
+.bookingCentralSubtitle h3 {
+    font-size: 64px;
+    font-family: 'Josefin Slab', arial, sans-serif;
+    margin-top: 30px;
+    font-weight: 400;
+}
