@@ -1,4 +1,8 @@
 # Tiusella
+26/09/2021
+- Traduction anglais 
+
+-----------------------------------------------------------
 25/07/2021
 
 - Ajout feed Instagram
