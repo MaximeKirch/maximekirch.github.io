@@ -99,6 +99,10 @@ header {
  
 }
 
+.icon {
+    display: none;
+}
+
 .menu {
     margin-top: 20px;
     display: block;
