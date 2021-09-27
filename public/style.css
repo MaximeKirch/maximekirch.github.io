@@ -434,6 +434,10 @@ header {
     width: 350px;
 }
 
+#inputMessage {
+    width: 500px;
+}
+
     /* c. Bouton Envoyer */ 
 
 #submitBtn {
@@ -666,20 +670,40 @@ header {
         /* 7. Responsive */ 
 
 
-                /* smartphone */
+                /* Smartphone */
+        @media screen and (max-width: 400px) {
 
-        @media screen and (max-width: 991px) {
+            .centralSubTitle h3 {
+                font-size: 32px;
+            }
+
+            iframe {
+               height: 150px;
+               width: 200px;
+            }
+            
+
+            .foundCentralSubtitle h3 {
+                font-size: 32px;
+            }
+
+            #foundText {
+                font-size: 16px;
+            }
+        }
+
+        @media screen and (max-width: 1500px) {
 
             /* General */ 
             
             .main {
                 width: auto;
                 height: auto;
-               
             }
 
             .central {
                 width: 80%;
+                text-align: center;
             }
 
             .footer {
@@ -694,17 +718,20 @@ header {
 
             .menu a.icon {
                 display: block;
-                position: absolute;
-                right: 0;
+                position: relative;
                 top: 0;
+                right: 0;
                 font-size: 48px;
                 margin-right: 10px;
                 margin-top: 10px;
+                text-align: center;
+                font-family: 'Josefin Slab';
 
             }
 
             #menu {
                 display: none;
+                position: relative; 
                
             }
 
@@ -713,11 +740,39 @@ header {
                 flex-direction: column;
             }
 
-            .deroulant {
+            
+
+            .mainTitle > h1 {
+                text-align: center;
+                font-size: 60px;
+            }
+
+            
+
+
+
+
+            /* Footer */ 
+
+
+            .footer {
+                width: auto;
+                height: auto;
                 display: flex;
 
             }
 
+            .footer li {
+                font-size: 12px;
+                width: auto;
+                flex-wrap: nowrap;
+            }
+
+            .footer > a {
+               
+               height: auto;
+                width: auto;
+            }
             
 
            
@@ -735,8 +790,41 @@ header {
                 display: none;
             }
 
+            /* b. Found */ 
+
+            .foundCentralSubtitle {
+                text-align: center;
+            }
+
+            #foundText {
+                text-align: center;
+            }
+
+            .map {
+                margin: 10px;
+            }
 
 
 
+            /* c. Contact */ 
+
+            .contactCentralSubtitle {
+                text-align: center;
+
+            }
+
+            .form  {
+                width: auto;
+            }
+
+            #inputName, #inputMessage, #inputEmail, #inputObject, #inputMessage, #submitBtn {
+                width: auto;
+                margin: 5px;
+                padding: 0px 5px;
+            }
+
+            #inputMessage {
+                width: 200px;
+            }
         }
 
