@@ -671,7 +671,7 @@ header {
 
 
                 /* Smartphone */
-        @media screen and (max-width: 400px) {
+        @media screen and (max-width: 350px) {
 
             .centralSubTitle h3 {
                 font-size: 32px;
