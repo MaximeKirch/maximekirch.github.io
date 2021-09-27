@@ -23,19 +23,32 @@
     </div>
 
     <div class="menu">
-        <ul>
-            <li><a href="index.html">Accueil</a></li>
-            <li class="deroulant"><a href="#">La Maison</a>
-                <ul class="sous">
-                    <li><a href="casamaio.html">A Casa Maìo</a></li>
-                    <li><a href="casetta.html">A Casetta</a></li>
-                </ul>
-            </li>
-            <li><a href="booking.html">Réservez</a></li>
-            <li><a href="found.html">Nous trouver</a></li>
-            <li><a href="contact.html">Nous contacter</a></li>
-        </ul>
-    </div>
+        <div id="menu" class=''>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li class="deroulant"><a href="#">La Maison</a>
+                    <ul class="sous">
+                        <li><a href="casamaio.html">A Casa Maìo</a></li>
+                        <li><a href="casetta.html">A Casetta</a></li>
+                    </ul>
+                </li>
+                <li><a href="booking.html">Réservez</a></li>
+                <li><a href="found.html">Nous trouver</a></li>
+                <li><a href="contact.html">Nous contacter</a></li>
+                <li class="deroulant"><a href="#">Language</a>
+                    <ul class="sous">
+                        <li><a href="index.html">FR 🇫🇷</a></li>
+                        <li><a href="./EN/EN_index.html">EN 🇬🇧</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+         <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+            <a href="javascript:void(0);" class="icon" onclick="toggleMenu()">
+                <p class="fa fa-bars">≡</p>
+            </a>
+</div>
 
 <hr id="supHero">
 <div class="hero">
@@ -165,6 +178,7 @@
    
 </div>
 
-    
+<script src="js/script.js" type='text/javascript'></script>
+
 </body>
 </html>

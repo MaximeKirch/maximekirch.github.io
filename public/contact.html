@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Tiusella - Contactez-nous</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="mainTitle">
+        <h1 id="title"><a href="index.html">A Tiusella</a></h1>
+    </div>
+    <div class="subTitle">
+        <h3 id="subtitle">Tra mare e monti</h3>
+    </div>
+
+    <div class="line">
+    <hr>
+    </div>
+
+    <div class="menu">
+        <div id="menu" class=''>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li class="deroulant"><a href="#">La Maison</a>
+                    <ul class="sous">
+                        <li><a href="casamaio.html">A Casa Maìo</a></li>
+                        <li><a href="casetta.html">A Casetta</a></li>
+                    </ul>
+                </li>
+                <li><a href="booking.html">Réservez</a></li>
+                <li><a href="found.html">Nous trouver</a></li>
+                <li><a href="contact.html">Nous contacter</a></li>
+                <li class="deroulant"><a href="#">Language</a>
+                    <ul class="sous">
+                        <li><a href="index.html">FR 🇫🇷</a></li>
+                        <li><a href="./EN/EN_index.html">EN 🇬🇧</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+         <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+            <a href="javascript:void(0);" class="icon" onclick="toggleMenu()">
+                <p class="fa fa-bars">≡</p>
+            </a>
+</div>
+
+<hr id="supHero">
+<div class="hero">
+
+</div>
+<div class="main">
+    
+    <div class="central">
+
+        <div class="contactCentralSubtitle">
+
+            <h3>Nous contacter</h3>
+            
+        </div>
+
+       
+        <hr id="subtitleHr">
+        
+        <div class="formContact">
+
+            <form class="form" method="post" >
+                <p>Votre nom : </p>
+                <input id="inputName" type="text" name="name" placeholder="Obligatoire" required>
+                <p>Votre mail :</p>
+                <input id="inputEmail" type="mail" name="email" placeholder="Obligatoire" required>
+                <p>Objet :</p>
+                <input id="inputObject" type="text" name="Objet" placeholder="Obligatoire" required>
+                <p>Votre message : </p>
+                <textarea id="inputMessage" name="Message" id="" cols="75" rows="15" placeholder="Obligatoire" required></textarea> <br>
+                <button type='submit' id="submitBtn">Envoyer</button>
+    
+            </form>
+        
+        </div>
+       
+
+
+        
+
+    </div>
+
+    
+</div>
+
+<div class="footer">
+    <ul>
+        
+        <li><a href="https://www.instagram.com/atiusella"><img src="src/free.png" alt="Instagram" srcset=""></a></li>
+        <li><a href="https://www.facebook.com/atiusella"><img src="src/facebook.png" alt="Facebook" srcset=""></a></li>
+        <li>-</li>
+        <li><a href="cgv.html">Conditions Générales de Vente </a></li>
+        <li>-</li>
+        <li>©A Tiusella 2021</li>
+    </ul>
+   
+</div>
+<script src="https://www.gstatic.com/firebasejs/5.0.4/firebase.js"></script>
+<script type='text/javascript' src='js/firebase.js'></script>
+<script src="js/script.js" type='text/javascript'></script>
+
+
+</body>
+</html>

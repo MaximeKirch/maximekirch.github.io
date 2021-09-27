@@ -106,6 +106,10 @@ header {
     justify-content: space-between;
 }
 
+.menu label, #toggle {
+    display: none;
+}
+
 .menu ul li {
     float: none;
     width: auto;
@@ -554,7 +558,6 @@ header {
       width: auto;
       margin-top: -22px;
       padding: 16px;
-      color: red;
       font-weight: bold;
       font-size: 18px;
       transition: 0.6s ease;
@@ -654,21 +657,82 @@ header {
     /* -------------------------------------------------------------------------------------------------------- */ 
 
 
-    .md-calendar-booking .mbsc-calendar-text {
-        text-align: center;
-    }
-    
-    .md-calendar-booking .booking-datetime .mbsc-datepicker-tab-calendar {
-        flex: 1 1 0;
-        min-width: 300px;
-    }
-    
-    .md-calendar-booking .mbsc-timegrid-item {
-        margin-top: 1.5em;
-        margin-bottom: 1.5em;
-    }
-    
-    .md-calendar-booking .mbsc-timegrid-container {
-        top: 30px;
-    }
+    /* ------------------------------------------------------------------------- */
+
+        /* 7. Responsive */ 
+
+
+                /* smartphone */
+
+        @media screen and (max-width: 991px) {
+
+            /* General */ 
+            
+            .main {
+                width: auto;
+                height: auto;
+               
+            }
+
+            .central {
+                width: 80%;
+            }
+
+            .footer {
+                bottom: 0;
+            }
+           
+
+                /* Responsive Burger Menu */
+
+              
+
+
+            .menu a.icon {
+                display: block;
+                position: absolute;
+                right: 0;
+                top: 0;
+                font-size: 48px;
+                margin-right: 10px;
+                margin-top: 10px;
+
+            }
+
+            #menu {
+                display: none;
+               
+            }
+
+            #menu > ul {
+                display: flex;
+                flex-direction: column;
+            }
+
+            .deroulant {
+                display: flex;
+
+            }
+
+            
+
+           
+            
+
+            /* a. Index */ 
+
+           
+
+            .video {
+                margin: 10px;
+            }
+
+            .sideBar {
+                display: none;
+            }
+
+
+
+
+        }
 
