@@ -181,7 +181,7 @@ header {
 
 }
 
-.menu > ul .deroulant:hover .sous {
+.deroulant:hover > .sous {
     display: block !important;
 
 }
@@ -690,9 +690,16 @@ header {
             #foundText {
                 font-size: 16px;
             }
+
+            .deroulant:hover > .sous {
+                display: flex!important;
+                flex-direction: column;
+               
+            
+            }
         }
 
-        @media screen and (max-width: 1500px) {
+        @media screen and (max-width: 1200px) {
 
             /* General */ 
             
@@ -709,7 +716,8 @@ header {
             .footer {
                 bottom: 0;
             }
-           
+
+            
 
                 /* Responsive Burger Menu */
 
@@ -746,6 +754,17 @@ header {
                 text-align: center;
                 font-size: 60px;
             }
+
+            .deroulant:hover > .sous {
+                width: 100%;
+                display: flex !important;
+                flex-direction: column;
+               
+               
+             }
+
+            
+
 
             
 
